@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAZ SUISSE Gem & JEWELLERY</title>
+  <meta name="description" content="SAZ SUISSE Gem & JEWELLERY in Mirigama, Sri Lanka - custom jewellery, gems, diamonds, and trusted contracts with 25+ years of industry expertise.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-mark">SZ</span>
+      <span class="brand-text">SAZ SUISSE Gem & JEWELLERY</span>
+    </a>
+    <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#orders">Orders</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-anchor" id="home">
+      <img src="images/1.png" alt="SAZ SUISSE Gem and Jewellery banner showcase" class="hero-image">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Mirigama, Sri Lanka</p>
+        <h1>Crafting Timeless Gem & Jewellery Pieces for Every Story</h1>
+        <p>
+          SAZ SUISSE Gem & JEWELLERY creates custom jewellery, gem selections, and trusted contract work with
+          over 25 years of hands-on industry expertise.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#orders">Start a WhatsApp Order</a>
+          <a class="btn btn-ghost" href="#about">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <div class="panel-head">
+        <p class="eyebrow">What We Do</p>
+        <h2>Premium Services for Jewellery and Gem Contracts</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="card">
+          <h3>Custom Jewellery Making</h3>
+          <p>From concept sketches to finished pieces, we craft rings, necklaces, bangles, and special designs for personal and family milestones.</p>
+        </article>
+        <article class="card">
+          <h3>Gem & Diamond Expertise</h3>
+          <p>We guide clients in selecting suitable gems and diamonds based on style, quality, and budget with practical market knowledge.</p>
+        </article>
+        <article class="card">
+          <h3>Contract & Dealer Support</h3>
+          <p>We work with shops, resellers, and private clients to handle jewellery contracts, custom order fulfillment, and trusted delivery timelines.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="split reveal section-anchor" id="about">
+      <div class="split-content">
+        <p class="eyebrow">About Us</p>
+        <h2>A Trusted Name for 25+ Years in Gems & Jewellery</h2>
+        <p>
+          SAZ SUISSE Gem & JEWELLERY is a dealer based in Mirigama, Sri Lanka. We handle custom jewellery requests,
+          gem and diamond guidance, and long-term contract orders for private and business clients.
+        </p>
+        <ul class="bullet-list">
+          <li>25+ years of industry experience</li>
+          <li>Expertise in Gems, Diamonds, and fine jewellery design</li>
+          <li>Dealer support for contracts and custom production</li>
+          <li>Transparent communication and practical timelines</li>
+        </ul>
+      </div>
+      <div class="split-media">
+        <img src="images/10.webp" alt="Fine-cut gemstone and diamond examples">
+      </div>
+    </section>
+
+    <section class="gallery reveal">
+      <div class="panel-head">
+        <p class="eyebrow">Featured Looks</p>
+        <h2>Modern Designs with Classic Character</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="images/2.webp" alt="Ruby-styled luxury jewellery set">
+        <img src="images/3.webp" alt="Diamond ring with polished gold frame">
+        <img src="images/5.webp" alt="Fine gem bracelet detail">
+        <img src="images/6.webp" alt="Elegant necklace collection">
+      </div>
+    </section>
+
+    <section class="order-layout section-anchor" id="orders">
+      <article class="panel reveal">
+        <div class="panel-head">
+          <p class="eyebrow">Order Form</p>
+          <h2>Send Orders by WhatsApp by Default</h2>
+        </div>
+
+        <form id="orderForm" class="order-form">
+          <label>
+            Full Name
+            <input type="text" id="customerName" name="customerName" placeholder="John Perera" required>
+          </label>
+          <label>
+            Contact Number
+            <input type="tel" id="contactNumber" name="contactNumber" placeholder="+94 77 123 4567" required>
+          </label>
+          <label>
+            Email Address (Optional)
+            <input type="email" id="emailAddress" name="emailAddress" placeholder="john@email.com">
+          </label>
+          <label>
+            Order Type
+            <select id="orderType" name="orderType" required>
+              <option value="">Select type</option>
+              <option value="Custom Ring">Custom Ring</option>
+              <option value="Custom Necklace">Custom Necklace</option>
+              <option value="Gem / Diamond Sourcing">Gem / Diamond Sourcing</option>
+              <option value="Bulk Contract Order">Bulk Contract Order</option>
+            </select>
+          </label>
+          <label>
+            Budget Range (LKR)
+            <select id="budget" name="budget">
+              <option value="">Select budget</option>
+              <option value="50,000 - 150,000">50,000 - 150,000</option>
+              <option value="150,000 - 300,000">150,000 - 300,000</option>
+              <option value="300,000 - 750,000">300,000 - 750,000</option>
+              <option value="750,000+">750,000+</option>
+            </select>
+          </label>
+          <label>
+            Request Details
+            <textarea id="details" name="details" rows="5" placeholder="Describe design, stones, size, preferred delivery time..." required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-primary" id="sendWhatsappBtn">Send by WhatsApp</button>
+            <button type="button" class="btn btn-ghost" id="sendEmailBtn">Send by Email</button>
+          </div>
+          <p class="form-note">Default channel is WhatsApp. Use email only if you prefer.</p>
+        </form>
+      </article>
+
+      <aside class="panel reveal">
+        <div class="panel-head">
+          <p class="eyebrow">Contact Details</p>
+          <h2>SAZ SUISSE Gem & JEWELLERY</h2>
+        </div>
+        <div class="contact-card">
+          <p><strong>Address:</strong> 141/1 Pasyala Road, Mirigama, Sri Lanka.</p>
+          <p><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/94779108808" target="_blank" rel="noopener">0779108808</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@sazsuisse.lk">info@sazsuisse.lk</a></p>
+          <p><strong>Service Scope:</strong> Custom jewellery, gem and diamond support, contract and dealer orders.</p>
+        </div>
+        <div class="quick-process">
+          <h3>Order Process</h3>
+          <ol>
+            <li>Submit your requirement</li>
+            <li>Receive response with next steps</li>
+            <li>Confirm design and contract details</li>
+            <li>Production and delivery updates</li>
+          </ol>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>SAZ SUISSE Gem & JEWELLERY</strong> | 141/1 Pasyala Road, Mirigama, Sri Lanka.</p>
+    <p>Contact / WhatsApp: <a href="https://wa.me/94779108808" target="_blank" rel="noopener">0779108808</a> | Email: <a href="mailto:info@sazsuisse.lk">info@sazsuisse.lk</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
