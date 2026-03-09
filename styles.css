@@ -412,18 +412,6 @@ main {
   color: #9e3d2f;
 }
 
-.site-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-right {
-  text-align: right;
-  font-size: 14px;
-}
-
 .hero-content h1 {
   color: #fff5ef;
 }
