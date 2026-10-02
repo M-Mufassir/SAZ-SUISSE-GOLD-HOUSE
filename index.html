@@ -1,189 +1,914 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAZ SUISSE Gem & JEWELLERY</title>
-  <meta name="description" content="SAZ SUISSE Gem & JEWELLERY in Mirigama, Sri Lanka - custom jewellery, gems, diamonds, and trusted contracts with 25+ years of industry expertise.">
+  <title>SAZ SUISSE Gem & JEWELLERY | Swiss Craftsmanship & Ceylon Gemstones</title>
+  <meta name="description" content="SAZ SUISSE Gem & JEWELLERY in Mirigama, Sri Lanka. Bespoke high jewellery, certified natural Ceylon sapphires, rubies, diamonds, and trusted contract manufacturing with 25+ years of master atelier expertise.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/1.png">
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="background-glow"></div>
+  <div class="bg-ambient-glow" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <a class="brand" href="#home">
-      <span class="brand-mark">SZ</span>
-      <span class="brand-text">SAZ SUISSE Gem & JEWELLERY</span>
-    </a>
-    <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav class="site-nav">
-      <a class="active" href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#orders">Orders</a>
-    </nav>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <span class="top-badge">✦ ATELIER HERITAGE</span>
+      <span>141/1 Pasyala Road, Mirigama, Sri Lanka</span>
+      <span style="opacity: 0.4;">|</span>
+      <span>25+ Years Swiss Craftsmanship & Ceylon Gem Legacy</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://wa.me/94779108808" target="_blank" rel="noopener" class="top-bar-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp: 0779108808
+      </a>
+      <a href="mailto:info@sazsuisse.lk" class="top-bar-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        info@sazsuisse.lk
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <!-- Brand Logo -->
+      <a class="brand" href="#home" aria-label="SAZ SUISSE Gem and Jewellery Home">
+        <div class="brand-crest">SZ</div>
+        <div class="brand-info">
+          <span class="brand-title">SAZ SUISSE</span>
+          <span class="brand-subtitle">Gem & JEWELLERY</span>
+        </div>
+      </a>
+
+      <!-- Live Search Bar -->
+      <div class="header-search">
+        <div class="search-input-wrapper">
+          <span class="search-icon-left">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </span>
+          <input type="text" id="catalogSearchInput" class="search-input" placeholder="Search rings, sapphires, bespoke sets..." aria-label="Search jewelry catalog">
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#categories">Collections</a>
+        <a class="nav-link" href="#products">Masterpieces</a>
+        <a class="nav-link" href="#spotlight">Bridal</a>
+        <a class="nav-link" href="#about">Heritage</a>
+        <a class="nav-link" href="#guides">Jewellery Guide</a>
+        <a class="nav-link" href="#orders">Custom Orders</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Switcher (Obsidian Dark / Ivory Champagne) -->
+        <button id="themeToggleBtn" class="icon-btn" title="Toggle Obsidian Dark / Ivory Champagne Theme" aria-label="Toggle theme">
+          <svg id="themeIconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+
+        <!-- WhatsApp Direct Contact Button -->
+        <a href="https://wa.me/94779108808?text=Hello%20SAZ%20SUISSE%20Gem%20%26%20Jewellery%2C%20I%20would%20like%20to%20inquire%20about%20your%20pieces." target="_blank" rel="noopener" class="btn-whatsapp-header" aria-label="Direct WhatsApp Order">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>WhatsApp Inquiry</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="hero section-anchor" id="home">
-      <img src="images/1.png" alt="SAZ SUISSE Gem and Jewellery banner showcase" class="hero-image">
-      <div class="hero-overlay"></div>
-      <div class="hero-content reveal">
-        <p class="eyebrow">Mirigama, Sri Lanka</p>
-        <h1>Crafting Timeless Gem & Jewellery Pieces for Every Story</h1>
-        <p>
-          SAZ SUISSE Gem & JEWELLERY creates custom jewellery, gem selections, and trusted contract work with
-          over 25 years of hands-on industry expertise.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#orders">Start a WhatsApp Order</a>
-          <a class="btn btn-ghost" href="#about">Our Story</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel reveal">
-      <div class="panel-head">
-        <p class="eyebrow">What We Do</p>
-        <h2>Premium Services for Jewellery and Gem Contracts</h2>
-      </div>
-      <div class="feature-grid">
-        <article class="card">
-          <h3>Custom Jewellery Making</h3>
-          <p>From concept sketches to finished pieces, we craft rings, necklaces, bangles, and special designs for personal and family milestones.</p>
-        </article>
-        <article class="card">
-          <h3>Gem & Diamond Expertise</h3>
-          <p>We guide clients in selecting suitable gems and diamonds based on style, quality, and budget with practical market knowledge.</p>
-        </article>
-        <article class="card">
-          <h3>Contract & Dealer Support</h3>
-          <p>We work with shops, resellers, and private clients to handle jewellery contracts, custom order fulfillment, and trusted delivery timelines.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="split reveal section-anchor" id="about">
-      <div class="split-content">
-        <p class="eyebrow">About Us</p>
-        <h2>A Trusted Name for 25+ Years in Gems & Jewellery</h2>
-        <p>
-          SAZ SUISSE Gem & JEWELLERY is a dealer based in Mirigama, Sri Lanka. We handle custom jewellery requests,
-          gem and diamond guidance, and long-term contract orders for private and business clients.
-        </p>
-        <ul class="bullet-list">
-          <li>25+ years of industry experience</li>
-          <li>Expertise in Gems, Diamonds, and fine jewellery design</li>
-          <li>Dealer support for contracts and custom production</li>
-          <li>Transparent communication and practical timelines</li>
-        </ul>
-      </div>
-      <div class="split-media">
-        <img src="images/10.webp" alt="Fine-cut gemstone and diamond examples">
-      </div>
-    </section>
-
-    <section class="gallery reveal">
-      <div class="panel-head">
-        <p class="eyebrow">Featured Looks</p>
-        <h2>Modern Designs with Classic Character</h2>
-      </div>
-      <div class="gallery-grid">
-        <img src="images/2.webp" alt="Ruby-styled luxury jewellery set">
-        <img src="images/3.webp" alt="Diamond ring with polished gold frame">
-        <img src="images/5.webp" alt="Fine gem bracelet detail">
-        <img src="images/6.webp" alt="Elegant necklace collection">
-      </div>
-    </section>
-
-    <section class="order-layout section-anchor" id="orders">
-      <article class="panel reveal">
-        <div class="panel-head">
-          <p class="eyebrow">Order Form</p>
-          <h2>Send Orders by WhatsApp by Default</h2>
-        </div>
-
-        <form id="orderForm" class="order-form">
-          <label>
-            Full Name
-            <input type="text" id="customerName" name="customerName" placeholder="John Perera" required>
-          </label>
-          <label>
-            Contact Number
-            <input type="tel" id="contactNumber" name="contactNumber" placeholder="+94 77 123 4567" required>
-          </label>
-          <label>
-            Email Address (Optional)
-            <input type="email" id="emailAddress" name="emailAddress" placeholder="john@email.com">
-          </label>
-          <label>
-            Order Type
-            <select id="orderType" name="orderType" required>
-              <option value="">Select type</option>
-              <option value="Custom Ring">Custom Ring</option>
-              <option value="Custom Necklace">Custom Necklace</option>
-              <option value="Gem / Diamond Sourcing">Gem / Diamond Sourcing</option>
-              <option value="Bulk Contract Order">Bulk Contract Order</option>
-            </select>
-          </label>
-          <label>
-            Budget Range (LKR)
-            <select id="budget" name="budget">
-              <option value="">Select budget</option>
-              <option value="50,000 - 150,000">50,000 - 150,000</option>
-              <option value="150,000 - 300,000">150,000 - 300,000</option>
-              <option value="300,000 - 750,000">300,000 - 750,000</option>
-              <option value="750,000+">750,000+</option>
-            </select>
-          </label>
-          <label>
-            Request Details
-            <textarea id="details" name="details" rows="5" placeholder="Describe design, stones, size, preferred delivery time..." required></textarea>
-          </label>
-
-          <div class="form-actions">
-            <button type="button" class="btn btn-primary" id="sendWhatsappBtn">Send by WhatsApp</button>
-            <button type="button" class="btn btn-ghost" id="sendEmailBtn">Send by Email</button>
+    <!-- ==========================================================================
+         HERO SECTION: Cinematic High Jewelry Stage
+         ========================================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-backdrop-glow" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="hero-eyebrow-badge">
+            <span class="pulse-dot"></span>
+            <span>Mirigama, Sri Lanka • Swiss Precision Standards</span>
           </div>
-          <p class="form-note">Default channel is WhatsApp. Use email only if you prefer.</p>
-        </form>
-      </article>
+          <h1>
+            Crafting Timeless <br>
+            <span class="gold-gradient-text">Gem & Jewellery</span> Pieces <br>
+            for Every Story
+          </h1>
+          <p class="hero-lead">
+            SAZ SUISSE Gem & JEWELLERY blends 25+ years of Swiss goldsmithing mastery with Sri Lanka’s rarest certified Ceylon Sapphires, natural diamonds, and bespoke atelier contract fulfillment.
+          </p>
+          <div class="hero-actions">
+            <a href="#orders" class="btn btn-gold">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              <span>Custom Order on WhatsApp</span>
+            </a>
+            <a href="#products" class="btn btn-ghost-gold">
+              <span>Explore Masterpieces</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+          <div class="hero-trust-row">
+            <div class="trust-item">
+              <h4>25+ Years</h4>
+              <p>Hands-on industry atelier expertise</p>
+            </div>
+            <div class="trust-item">
+              <h4>100% Certified</h4>
+              <p>Natural Ceylon sapphires & diamonds</p>
+            </div>
+            <div class="trust-item">
+              <h4>Global Contracts</h4>
+              <p>Trusted shop & private order fulfillment</p>
+            </div>
+          </div>
+        </div>
 
-      <aside class="panel reveal">
-        <div class="panel-head">
-          <p class="eyebrow">Contact Details</p>
-          <h2>SAZ SUISSE Gem & JEWELLERY</h2>
+        <div class="hero-visual-wrapper reveal">
+          <div class="hero-mini-tag mini-tag-1">
+            <span>💎</span> Certified Untreated Ceylon Sapphire
+          </div>
+          <div class="hero-mini-tag mini-tag-2">
+            <span>✨</span> 22K Solid Gold Hallmarked
+          </div>
+          <div class="hero-main-card">
+            <img src="images/hero-luxury.jpg" alt="Exquisite Ceylon Sapphire and 22K Gold Wedding Bands by SAZ SUISSE">
+            <div class="hero-floating-badge">
+              <div class="badge-details">
+                <h5>The Royal Ceylon Sapphire Suite</h5>
+                <p>Cushion-cut halo pendant & handcrafted bands</p>
+              </div>
+              <span class="badge-tag">Atelier Signature</span>
+            </div>
+          </div>
         </div>
-        <div class="contact-card">
-          <p><strong>Address:</strong> 141/1 Pasyala Road, Mirigama, Sri Lanka.</p>
-          <p><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/94779108808" target="_blank" rel="noopener">0779108808</a></p>
-          <p><strong>Email:</strong> <a href="mailto:info@sazsuisse.lk">info@sazsuisse.lk</a></p>
-          <p><strong>Service Scope:</strong> Custom jewellery, gem and diamond support, contract and dealer orders.</p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CURATED CATEGORIES (From Behance Reference 1)
+         ========================================================================== -->
+    <section class="section-categories" id="categories">
+      <div class="section-head reveal">
+        <span class="eyebrow">Curated Collections</span>
+        <h2>Explore By Signature Category</h2>
+        <div class="ornament-divider" aria-hidden="true">
+          <span class="ornament-line"></span>
+          <span class="ornament-gem"></span>
+          <span class="ornament-line"></span>
         </div>
-        <div class="quick-process">
-          <h3>Order Process</h3>
-          <ol>
-            <li>Submit your requirement</li>
-            <li>Receive response with next steps</li>
-            <li>Confirm design and contract details</li>
-            <li>Production and delivery updates</li>
-          </ol>
+        <p>Each design is individually conceptualized and handcrafted using certified 22K/18K gold and earth-mined precious gems.</p>
+      </div>
+
+      <div class="categories-grid">
+        <!-- Category 1: Rings -->
+        <a href="#products" class="category-card reveal" data-filter="rings">
+          <span class="category-tag-sub">Best For</span>
+          <h3 class="category-title">Ring Ceremony & Bands</h3>
+          <div class="category-image-wrap">
+            <img src="images/cat-rings.jpg" alt="22K Solitaire Diamond Ring Ceremony Sets">
+          </div>
+          <span class="category-cta-link">
+            <span>View Rings</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
+
+        <!-- Category 2: Necklaces -->
+        <a href="#products" class="category-card reveal" data-filter="necklaces">
+          <span class="category-tag-sub">Best In</span>
+          <h3 class="category-title">Bridal & Royal Ornaments</h3>
+          <div class="category-image-wrap">
+            <img src="images/cat-necklaces.jpg" alt="22K Gold and Ruby Bridal Necklaces">
+          </div>
+          <span class="category-cta-link">
+            <span>View Ornaments</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
+
+        <!-- Category 3: Gemstones -->
+        <a href="#products" class="category-card reveal" data-filter="gemstones">
+          <span class="category-tag-sub">Direct Mining</span>
+          <h3 class="category-title">Certified Ceylon Gems</h3>
+          <div class="category-image-wrap">
+            <img src="images/cat-gemstones.jpg" alt="Natural Ceylon Sapphires, Rubies, and Diamonds">
+          </div>
+          <span class="category-cta-link">
+            <span>Explore Gemstones</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
+
+        <!-- Category 4: Bangles -->
+        <a href="#products" class="category-card reveal" data-filter="bangles">
+          <span class="category-tag-sub">Artisan Craft</span>
+          <h3 class="category-title">Handcrafted Bangles</h3>
+          <div class="category-image-wrap">
+            <img src="images/cat-bangles.jpg" alt="Handcrafted 22K Gold and Diamond Cuff Bangles">
+          </div>
+          <span class="category-cta-link">
+            <span>View Bangles</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LATEST MASTERPIECES / PRODUCT SHOWCASE
+         ========================================================================== -->
+    <section class="section-products" id="products">
+      <div class="catalog-container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Exclusive Catalog</span>
+          <h2>Latest Masterpiece Creations</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-gem"></span>
+            <span class="ornament-line"></span>
+          </div>
+          <p>Indulge in certified Ceylon high jewelry. For pricing, customization options, and private viewings, contact our atelier directly via WhatsApp.</p>
         </div>
-      </aside>
+
+        <!-- Filter Tab Buttons -->
+        <div class="filter-tabs reveal">
+          <button class="filter-btn active" data-category="all">All Masterpieces</button>
+          <button class="filter-btn" data-category="rings">Rings</button>
+          <button class="filter-btn" data-category="necklaces">Necklaces</button>
+          <button class="filter-btn" data-category="earrings">Earrings</button>
+          <button class="filter-btn" data-category="bangles">Bangles</button>
+          <button class="filter-btn" data-category="gemstones">Ceylon Gems</button>
+          <button class="filter-btn" data-category="mens">Men's Collection</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Product 1: Sapphire Halo Ring -->
+          <article class="product-card reveal" data-category="rings" data-id="p1" data-name="Royal Ceylon Sapphire Halo Ring">
+            <div class="product-media">
+              <span class="product-badge-purity">18K White Gold</span>
+              <img src="images/prod-sapphire-ring.jpg" alt="Royal Ceylon Sapphire Halo Ring">
+            </div>
+            <div class="product-info">
+              <span class="product-category-sub">Fine Rings</span>
+              <h3 class="product-name">Royal Ceylon Sapphire Halo Ring</h3>
+              <p class="product-meta-spec">2.80 ct Untreated Ceylon Royal Blue Sapphire • 0.65 ct VVS Round Brilliant Diamonds</p>
+              <div class="product-bottom-row">
+                <div class="product-price-block">
+                  <span class="price-sub">Pricing</span>
+                  <span class="price-val">Price On Request</span>
+                </div>
+                <button class="btn-inquire-product" data-name="Royal Ceylon Sapphire Halo Ring" data-sku="SZ-RN-01">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  <span>Inquire Price on WhatsApp</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2: Men's Onyx Signet Ring (Matching images/1.png) -->
+          <article class="product-card reveal" data-category="mens" data-id="p2" data-name="Men's 18K Onyx & Baguette Diamond Ring">
+            <div class="product-media">
+              <span class="product-badge-purity">18K Solid Gold 750</span>
+              <img src="images/prod-mens-ring.jpg" alt="Men's 18K Onyx and Diamond Signet Ring">
+            </div>
+            <div class="product-info">
+              <span class="product-category-sub">Men's Luxury</span>
+              <h3 class="product-name">Men's 18K Onyx & Diamond Ring</h3>
+              <p class="product-meta-spec">Natural Emerald-cut Black Onyx • Channel-Set Baguette Cut Diamonds • Swiss Gold Finish</p>
+              <div class="product-bottom-row">
+                <div class="product-price-block">
+                  <span class="price-sub">Pricing</span>
+                  <span class="price-val">Price On Request</span>
+                </div>
+                <button class="btn-inquire-product" data-name="Men's 18K Onyx and Diamond Ring" data-sku="SZ-MN-02">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  <span>Inquire Price on WhatsApp</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3: Emerald Choker -->
+          <article class="product-card reveal" data-category="necklaces" data-id="p3" data-name="Emerald Empress 22K Gold Choker">
+            <div class="product-media">
+              <span class="product-badge-purity">22K Solid Gold</span>
+              <img src="images/prod-emerald-choker.jpg" alt="Emerald Empress 22K Gold Choker">
+            </div>
+            <div class="product-info">
+              <span class="product-category-sub">Bridal Chokers</span>
+              <h3 class="product-name">Emerald Empress 22K Gold Choker</h3>
+              <p class="product-meta-spec">Vivid Natural Green Emeralds • 1.80 ct Brilliant Floral Diamond Halos • 22K Hallmarked Gold</p>
+              <div class="product-bottom-row">
+                <div class="product-price-block">
+                  <span class="price-sub">Pricing</span>
+                  <span class="price-val">Price On Request</span>
+                </div>
+                <button class="btn-inquire-product" data-name="Emerald Empress 22K Gold Choker" data-sku="SZ-NK-03">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  <span>Inquire Price on WhatsApp</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4: Ruby Chandelier Earrings -->
+          <article class="product-card reveal" data-category="earrings" data-id="p4" data-name="Heirloom Ruby Chandelier Drop Earrings">
+            <div class="product-media">
+              <span class="product-badge-purity">22K Gold & Pigeon Ruby</span>
+              <img src="images/prod-ruby-earrings.jpg" alt="Heirloom Ruby Chandelier Drop Earrings">
+            </div>
+            <div class="product-info">
+              <span class="product-category-sub">Drop Earrings</span>
+              <h3 class="product-name">Heirloom Ruby Chandelier Earrings</h3>
+              <p class="product-meta-spec">Natural Pigeon Blood Red Rubies • Cascading Filigree Frame • Diamond Accent Accents</p>
+              <div class="product-bottom-row">
+                <div class="product-price-block">
+                  <span class="price-sub">Pricing</span>
+                  <span class="price-val">Price On Request</span>
+                </div>
+                <button class="btn-inquire-product" data-name="Heirloom Ruby Chandelier Earrings" data-sku="SZ-ER-04">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  <span>Inquire Price on WhatsApp</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 5: 22K Gold Floral Bangle -->
+          <article class="product-card reveal" data-category="bangles" data-id="p5" data-name="Artisan Floral 22K Gold Cuff Bangle">
+            <div class="product-media">
+              <span class="product-badge-purity">22K Hand-Carved</span>
+              <img src="images/cat-bangles.jpg" alt="Artisan Floral 22K Gold Cuff Bangle">
+            </div>
+            <div class="product-info">
+              <span class="product-category-sub">Solid Gold Bangles</span>
+              <h3 class="product-name">Artisan Floral 22K Gold Cuff</h3>
+              <p class="product-meta-spec">Traditional Sri Lankan Master Filigree • 0.95 ct Pave Diamonds • Hinged Luxury Clasp</p>
+              <div class="product-bottom-row">
+                <div class="product-price-block">
+                  <span class="price-sub">Pricing</span>
+                  <span class="price-val">Price On Request</span>
+                </div>
+                <button class="btn-inquire-product" data-name="Artisan Floral 22K Gold Cuff Bangle" data-sku="SZ-BG-05">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  <span>Inquire Price on WhatsApp</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 6: Natural Ceylon Loose Gemstones Selection -->
+          <article class="product-card reveal" data-category="gemstones" data-id="p6" data-name="Certified Ceylon Royal Blue Sapphire & Gem Vault">
+            <div class="product-media">
+              <span class="product-badge-purity">Certified Untreated</span>
+              <img src="images/cat-gemstones.jpg" alt="Certified Ceylon Royal Blue Sapphire and Loose Gemstones">
+            </div>
+            <div class="product-info">
+              <span class="product-category-sub">Loose Gemstones</span>
+              <h3 class="product-name">Certified Ceylon Sapphire & Ruby Vault</h3>
+              <p class="product-meta-spec">3.50+ ct Natural Royal Blue Sapphire • Padparadscha & Emeralds • Gemological Lab Reports</p>
+              <div class="product-bottom-row">
+                <div class="product-price-block">
+                  <span class="price-sub">Pricing</span>
+                  <span class="price-val">Price On Request</span>
+                </div>
+                <button class="btn-inquire-product" data-name="Certified Ceylon Sapphire and Ruby Vault" data-sku="SZ-GM-06">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  <span>Inquire Price on WhatsApp</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 7: Solitaire Diamond Engagement Set -->
+          <article class="product-card reveal" data-category="rings" data-id="p7" data-name="Solitaire Diamond Dual Band Ceremony Ring">
+            <div class="product-media">
+              <span class="product-badge-purity">22K Satin Gold & Platinum</span>
+              <img src="images/cat-rings.jpg" alt="Solitaire Diamond Dual Band Ceremony Ring">
+            </div>
+            <div class="product-info">
+              <span class="product-category-sub">Engagement & Wedding</span>
+              <h3 class="product-name">Solitaire Diamond Dual Ceremony Set</h3>
+              <p class="product-meta-spec">1.25 ct Round Brilliant Certified Diamond • Platinum Six-Prong Crown • 22K Pave Diamond Guard</p>
+              <div class="product-bottom-row">
+                <div class="product-price-block">
+                  <span class="price-sub">Pricing</span>
+                  <span class="price-val">Price On Request</span>
+                </div>
+                <button class="btn-inquire-product" data-name="Solitaire Diamond Dual Ceremony Set" data-sku="SZ-RN-07">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  <span>Inquire Price on WhatsApp</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 8: Imperial Ruby & Diamond Bridal Necklace -->
+          <article class="product-card reveal" data-category="necklaces" data-id="p8" data-name="Imperial Ruby & Diamond Master Necklace">
+            <div class="product-media">
+              <span class="product-badge-purity">22K Royal Heirloom</span>
+              <img src="images/cat-necklaces.jpg" alt="Imperial Ruby and Diamond Master Bridal Necklace">
+            </div>
+            <div class="product-info">
+              <span class="product-category-sub">Royal Necklaces</span>
+              <h3 class="product-name">Imperial Ruby & Diamond Suite</h3>
+              <p class="product-meta-spec">Double Tiered 22K Gold Collar • 18 Cushion-Cut Natural Rubies • Complete Matching Earring Suite</p>
+              <div class="product-bottom-row">
+                <div class="product-price-block">
+                  <span class="price-sub">Pricing</span>
+                  <span class="price-val">Price On Request</span>
+                </div>
+                <button class="btn-inquire-product" data-name="Imperial Ruby & Diamond Suite" data-sku="SZ-NK-08">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  <span>Inquire Price on WhatsApp</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SIGNATURE BRIDAL SPOTLIGHT
+         ========================================================================== -->
+    <section class="section-spotlight" id="spotlight">
+      <div class="spotlight-card reveal">
+        <div class="spotlight-dual-visual">
+          <img src="images/spotlight-bridal.jpg" class="spotlight-img-main" alt="Model wearing SAZ SUISSE Bespoke Sapphire Bridal Suite">
+          <img src="images/spotlight-gem.jpg" class="spotlight-img-accent" alt="Untreated Ceylon Sapphire Brooch Detail">
+        </div>
+
+        <div class="spotlight-content">
+          <span class="eyebrow">Bespoke Atelier Service</span>
+          <h3>Wedding & Milestone Ornaments</h3>
+          <div class="spotlight-discount-badge">
+            Bespoke Atelier Service • Personal Consultation
+          </div>
+          <p>
+            From heritage bridal chokers to customized wedding ceremony bands, our master jewellers work directly with couples to craft once-in-a-lifetime heirlooms. We provide complete 3D CAD visualization before setting a single stone.
+          </p>
+          <ul class="spotlight-perks-list">
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Photorealistic 3D CAD design render before casting</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Direct gem mine sourcing from Ratnapura & Elahera</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Government hallmarking & gemological testing reports</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Complimentary lifetime ring sizing, cleaning & polishing</span>
+            </li>
+          </ul>
+          <a href="#orders" class="btn btn-gold" id="btnBookConsultation">
+            <span>Book Bespoke Consultation</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HERITAGE & ABOUT US: 25+ Years Mastery
+         ========================================================================== -->
+    <section class="section-about" id="about">
+      <div class="about-grid">
+        <div class="about-image-stage reveal">
+          <img src="images/craft-workshop.jpg" alt="Master goldsmith in atelier examining gemstone with loupe">
+          <div class="about-experience-stamp">
+            <h4>25+</h4>
+            <p>Years of Atelier<br>Excellence</p>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="eyebrow">Our Heritage</span>
+          <h2>A Trusted Name for 25+ Years in Gems & Fine Jewellery</h2>
+          <div class="ornament-divider" style="margin-left: 0;" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-gem"></span>
+            <span class="ornament-line"></span>
+          </div>
+          <p>
+            Established in Mirigama, Sri Lanka, <strong>SAZ SUISSE Gem & JEWELLERY</strong> was built upon the timeless discipline of Swiss precision craftsmanship combined with the natural gemological treasures of Ceylon.
+          </p>
+          <p>
+            We manage custom bespoke commissions, certified loose gemstone trading, and long-term contract manufacturing for retail showrooms, international dealers, and private clientele worldwide.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar-box">
+              <h4>Master Goldsmiths</h4>
+              <p>Over a quarter century of hand filigree, prong setting, and micro-pave expertise.</p>
+            </div>
+            <div class="pillar-box">
+              <h4>Mine-Direct Gems</h4>
+              <p>Direct sourcing of authentic Ceylon Blue Sapphires, Padparadschas, and Rubies.</p>
+            </div>
+            <div class="pillar-box">
+              <h4>Dealer Contracts</h4>
+              <p>Trusted supplier to luxury shops with strict timeline fulfillment and confidentiality.</p>
+            </div>
+            <div class="pillar-box">
+              <h4>Guaranteed Purity</h4>
+              <p>100% genuine 22K and 18K gold purity with certified hallmarking stamps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE JEWELLERY GUIDE & TOOLS
+         ========================================================================== -->
+    <section class="section-guides" id="guides">
+      <div class="guides-container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Interactive Atelier Tools</span>
+          <h2>Jewellery Guide & Custom Builder</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-gem"></span>
+            <span class="ornament-line"></span>
+          </div>
+          <p>Determine your exact international ring size or configure your custom gold and gemstone specifications for an immediate bespoke quotation on WhatsApp.</p>
+        </div>
+
+        <div class="guides-grid">
+          <!-- Guide 1: Interactive Ring Size Finder -->
+          <div class="guide-card reveal">
+            <h3>Find Your Ring Size</h3>
+            <p>Slide the diameter controller to match your finger circumference or inner ring diameter in millimeters.</p>
+            
+            <div class="ring-slider-group">
+              <div class="slider-labels">
+                <span>Inner Diameter: <strong id="diameterReadout">16.5 mm</strong></span>
+                <span>US Size <strong id="usSizeReadout">6.0</strong></span>
+              </div>
+              <input type="range" id="ringSizeSlider" class="ring-size-slider" min="14" max="22" step="0.5" value="16.5" aria-label="Adjust ring diameter">
+            </div>
+
+            <div class="ring-preview-box">
+              <div class="visual-ring-circle" id="visualRingCircle">
+                <span id="circleMmText">16.5 mm</span>
+              </div>
+              <div class="size-readout">
+                <h4>US Size: <span id="outUS">6</span> | UK: <span id="outUK">L 1/2</span></h4>
+                <p>EU / Sri Lanka Size: <span id="outEU">52</span></p>
+                <p style="margin-top: 0.35rem; font-size: 0.75rem; color: var(--gold-400);">✓ Universal Jeweller Standard</p>
+              </div>
+            </div>
+
+            <button class="btn btn-ghost-gold" id="btnApplyRingSize" style="width: 100%;">
+              <span>Apply Size to Order Form</span>
+            </button>
+          </div>
+
+          <!-- Guide 2: Custom Design Specification Builder -->
+          <div class="guide-card reveal">
+            <h3>Custom Design Specification</h3>
+            <p>Select your desired metal, stone type, and weight to submit a direct quotation request to our master craftsmen.</p>
+            
+            <form id="estimatorForm" class="estimator-form">
+              <div class="estimator-row">
+                <div class="form-group">
+                  <label for="estMetal">Metal & Purity</label>
+                  <select id="estMetal" class="form-select">
+                    <option value="22k" selected>22K Solid Gold</option>
+                    <option value="18kw">18K White Gold</option>
+                    <option value="18kr">18K Rose Gold</option>
+                    <option value="plat">Platinum 950</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="estGem">Center Gemstone</label>
+                  <select id="estGem" class="form-select">
+                    <option value="sapphire" selected>Ceylon Royal Blue Sapphire</option>
+                    <option value="ruby">Natural Pigeon Blood Ruby</option>
+                    <option value="emerald">Vivid Green Emerald</option>
+                    <option value="diamond">Certified Solitaire Diamond</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="estCarat">Gemstone Weight: <span id="caratVal">1.50</span> ct</label>
+                <input type="range" id="estCarat" class="ring-size-slider" min="0.5" max="5.0" step="0.25" value="1.5" aria-label="Gemstone carat weight">
+              </div>
+
+              <div class="estimator-result-card">
+                <div class="est-price-box">
+                  <h5>Pricing & Availability</h5>
+                  <div class="est-val" style="font-size: 1.15rem; color: var(--gold-200);">Provided on WhatsApp Consultation</div>
+                </div>
+                <button type="button" class="btn btn-whatsapp" id="btnSendEstToWhatsApp" style="padding: 0.6rem 1.1rem; font-size: 0.85rem;">
+                  <span>Inquire on WhatsApp</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ORDER STUDIO & DIRECT WHATSAPP INTEGRATION
+         ========================================================================== -->
+    <section class="section-orders" id="orders">
+      <div class="section-head reveal">
+        <span class="eyebrow">Bespoke Order Studio</span>
+        <h2>Commission Your Custom Masterpiece</h2>
+        <div class="ornament-divider" aria-hidden="true">
+          <span class="ornament-line"></span>
+          <span class="ornament-gem"></span>
+          <span class="ornament-line"></span>
+        </div>
+        <p>Complete your custom jewellery request below. Our live engine formats your submission directly for immediate WhatsApp or Email dispatch.</p>
+      </div>
+
+      <div class="order-layout-grid">
+        <!-- Order Form Card -->
+        <article class="order-card-main reveal">
+          <form id="orderForm" class="order-form-grid" novalidate>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="customerName">Full Name *</label>
+                <input type="text" id="customerName" name="customerName" class="form-input" placeholder="e.g. John Perera" required>
+              </div>
+              <div class="form-group">
+                <label for="contactNumber">Phone / WhatsApp Number *</label>
+                <input type="tel" id="contactNumber" name="contactNumber" class="form-input" placeholder="e.g. +94 77 123 4567" required>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="emailAddress">Email Address (Optional)</label>
+                <input type="email" id="emailAddress" name="emailAddress" class="form-input" placeholder="e.g. john@email.com">
+              </div>
+              <div class="form-group">
+                <label for="orderType">Order Type *</label>
+                <select id="orderType" name="orderType" class="form-select" required>
+                  <option value="">Select Order Scope</option>
+                  <option value="Custom Ring Ceremony">Custom Ring Ceremony / Wedding Band</option>
+                  <option value="Bridal Necklace & Suite">Bridal Necklace & Ornaments Suite</option>
+                  <option value="Ceylon Gem / Diamond Sourcing">Natural Ceylon Gem / Diamond Sourcing</option>
+                  <option value="Handcrafted Bangles">Handcrafted Bangles & Bracelets</option>
+                  <option value="Men's Luxury Ring / Signet">Men's Luxury Onyx / Gold Signet Ring</option>
+                  <option value="Bulk Dealer / Shop Contract">Bulk Dealer / Commercial Contract Order</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="budget">Target Budget (LKR)</label>
+                <select id="budget" name="budget" class="form-select">
+                  <option value="">Select Budget Range</option>
+                  <option value="LKR 150,000 - 300,000">LKR 150,000 - 300,000</option>
+                  <option value="LKR 300,000 - 600,000">LKR 300,000 - 600,000</option>
+                  <option value="LKR 600,000 - 1,200,000">LKR 600,000 - 1,200,000</option>
+                  <option value="LKR 1,200,000+ (High Jewellery)">LKR 1,200,000+ (High Jewellery)</option>
+                  <option value="Dealer Wholesale Agreement">Commercial / Dealer Agreement</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="ringSizeField">Ring Size (If Applicable)</label>
+                <input type="text" id="ringSizeField" name="ringSizeField" class="form-input" placeholder="e.g. US 6.5 (EU 53) or Pending">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="details">Detailed Specifications & Design Notes *</label>
+              <textarea id="details" name="details" class="form-textarea" rows="4" placeholder="Describe stone preferences (Sapphire, Ruby, Diamond), gold purity (22K / 18K), custom engravings, or reference designs..." required></textarea>
+            </div>
+
+            <!-- Real-time WhatsApp Message Preview -->
+            <div class="wa-preview-box">
+              <div class="wa-preview-header">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>Live WhatsApp Dispatch Preview:</span>
+              </div>
+              <div id="waPreviewText" class="wa-preview-content">New Order Request — SAZ SUISSE Gem & JEWELLERY
+Name: [Awaiting Input]
+Phone: [Awaiting Input]
+Scope: Custom Consultation
+Details: [Enter your specifications above]</div>
+            </div>
+
+            <div class="order-submit-actions">
+              <button type="button" class="btn btn-whatsapp" id="sendWhatsappBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>Send via WhatsApp (Direct)</span>
+              </button>
+              <button type="button" class="btn btn-ghost-gold" id="sendEmailBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>Send via Official Email</span>
+              </button>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 0.5rem;">
+              * WhatsApp is our fastest real-time consultation channel with a dedicated master jeweller responding within 30 minutes.
+            </p>
+          </form>
+        </article>
+
+        <!-- Sidebar: Contact Info & 4-Step Process -->
+        <aside class="order-sidebar reveal">
+          <div class="contact-info-card">
+            <h3>Atelier Contact Details</h3>
+            <ul class="contact-list">
+              <li class="contact-list-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-details">
+                  <p>Physical Atelier Address</p>
+                  <strong>141/1 Pasyala Road, Mirigama, Sri Lanka</strong>
+                  <br>
+                  <a href="https://maps.google.com/?q=Mirigama+Sri+Lanka" target="_blank" rel="noopener" style="font-size: 0.78rem; text-decoration: underline;">Open in Maps →</a>
+                </div>
+              </li>
+              <li class="contact-list-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-details">
+                  <p>Direct Call / WhatsApp</p>
+                  <a href="https://wa.me/94779108808" target="_blank" rel="noopener">0779108808 (+94 77 910 8808)</a>
+                </div>
+              </li>
+              <li class="contact-list-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-details">
+                  <p>Direct Business Email</p>
+                  <a href="mailto:info@sazsuisse.lk">info@sazsuisse.lk</a>
+                </div>
+              </li>
+              <li class="contact-list-item">
+                <div class="contact-icon">⏰</div>
+                <div class="contact-details">
+                  <p>Consultation Hours</p>
+                  <strong>Mon - Sat: 9:00 AM – 7:00 PM (IST)</strong>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="process-steps-card">
+            <h3>Crafting Journey</h3>
+            <ol class="steps-list">
+              <li>
+                <div>
+                  <strong>Submit Requirement</strong>
+                  <p style="margin: 0; font-size: 0.82rem; color: var(--text-muted);">Share your envisioned design, budget, and stone preferences.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>3D CAD & Stone Selection</strong>
+                  <p style="margin: 0; font-size: 0.82rem; color: var(--text-muted);">Approve precision 3D renders and inspect certified loose gemstones.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Handcrafted Casting</strong>
+                  <p style="margin: 0; font-size: 0.82rem; color: var(--text-muted);">Master artisans cast 22K/18K gold and set every stone with micro-precision.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Hallmarking & Insured Delivery</strong>
+                  <p style="margin: 0; font-size: 0.82rem; color: var(--text-muted);">Hallmarked certificate issued with insured courier or boutique collection.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TRUST & CERTIFICATION BADGES
+         ========================================================================== -->
+    <section class="section-trust">
+      <div class="trust-badges-grid">
+        <div class="trust-badge-item reveal">
+          <div class="trust-badge-icon">🏛️</div>
+          <h4>Swiss Goldsmith Legacy</h4>
+          <p>Over 25 years of master goldsmithing, stone setting, and precision casting.</p>
+        </div>
+        <div class="trust-badge-item reveal">
+          <div class="trust-badge-icon">💎</div>
+          <h4>100% Earth-Mined Gems</h4>
+          <p>Ethically sourced natural Ceylon Sapphires, Rubies, and conflict-free diamonds.</p>
+        </div>
+        <div class="trust-badge-item reveal">
+          <div class="trust-badge-icon">📜</div>
+          <h4>Certified Hallmarking</h4>
+          <p>Every creation is authenticated with gold purity stamps and lab certificates.</p>
+        </div>
+        <div class="trust-badge-item reveal">
+          <div class="trust-badge-icon">🛡️</div>
+          <h4>Lifetime Atelier Care</h4>
+          <p>Complimentary annual ultrasonic cleaning, claw inspection, and polishing.</p>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- ==========================================================================
+       LUXURY SITE FOOTER
+       ========================================================================== -->
   <footer class="site-footer">
-    <p><strong>SAZ SUISSE Gem & JEWELLERY</strong> | 141/1 Pasyala Road, Mirigama, Sri Lanka.</p>
-    <p>Contact / WhatsApp: <a href="https://wa.me/94779108808" target="_blank" rel="noopener">0779108808</a> | Email: <a href="mailto:info@sazsuisse.lk">info@sazsuisse.lk</a></p>
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="brand" style="margin-bottom: 1.25rem;">
+          <div class="brand-crest">SZ</div>
+          <div class="brand-info">
+            <span class="brand-title">SAZ SUISSE</span>
+            <span class="brand-subtitle">Gem & JEWELLERY</span>
+          </div>
+        </div>
+        <p>
+          SAZ SUISSE Gem & JEWELLERY is Sri Lanka’s premier destination for custom Swiss-calibre high jewellery, certified natural Ceylon gemstones, and corporate dealer manufacturing.
+        </p>
+        <p style="font-size: 0.82rem; color: var(--gold-300);">
+          141/1 Pasyala Road, Mirigama, Sri Lanka.
+        </p>
+        <div class="footer-social-row">
+          <a href="https://wa.me/94779108808" target="_blank" rel="noopener" class="social-circle-link" title="WhatsApp Chat">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          </a>
+          <a href="mailto:info@sazsuisse.lk" class="social-circle-link" title="Official Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="tel:+94779108808" class="social-circle-link" title="Direct Phone Call">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Signature Services</h4>
+        <ul class="footer-links">
+          <li><a href="#orders">Custom Jewellery Making</a></li>
+          <li><a href="#orders">Ceylon Gem & Diamond Guidance</a></li>
+          <li><a href="#orders">Contract & Dealer Fulfillment</a></li>
+          <li><a href="#spotlight">Bridal Suite Architecture</a></li>
+          <li><a href="#guides">Gemstone Identification & Value</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul class="footer-links">
+          <li><a href="#products">Ring Ceremony Sets</a></li>
+          <li><a href="#products">Royal Bridal Necklaces</a></li>
+          <li><a href="#products">Ceylon Blue Sapphires</a></li>
+          <li><a href="#products">22K Filigree Bangles</a></li>
+          <li><a href="#products">Men's 18K Onyx Signet Rings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Private VIP Inquiries</h4>
+        <p>Subscribe for confidential gemstone vault updates, new atelier releases, and custom crafting briefings.</p>
+        <form class="newsletter-box" onsubmit="event.preventDefault(); alert('Thank you for connecting with SAZ SUISSE Private Releases.');">
+          <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email for newsletter">
+          <button type="submit" class="newsletter-btn">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 SAZ SUISSE Gem & JEWELLERY. All Rights Reserved. 141/1 Pasyala Road, Mirigama, Sri Lanka.</p>
+      <p>Swiss Craftsmanship • Ceylon Royal Gemstones • Certified 22K/18K Gold</p>
+    </div>
   </footer>
 
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
