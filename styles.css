@@ -112,8 +112,11 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 92px;
+  scroll-padding-top: 80px;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
 }
 
 body {
@@ -126,6 +129,8 @@ body {
     radial-gradient(circle at 50% 85%, rgba(203, 161, 83, 0.06) 0%, transparent 50%);
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
   min-height: 100vh;
   position: relative;
   transition: background-color var(--transition-slow), color var(--transition-slow);
@@ -1901,96 +1906,616 @@ h1, h2, h3, h4, .serif-font {
 }
 
 /* ==========================================================================
-   Responsive Breakpoints
+   Comprehensive Responsive Architecture (Desktop, Tablet & Mobile)
    ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Tier 1: Laptops & Medium Screens (max-width: 1200px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 1200px) {
-  .categories-grid, .products-grid {
+  .categories-grid,
+  .products-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
   }
 
   .spotlight-card {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding: 3rem 2.25rem;
   }
 
   .footer-top {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
   }
 }
 
-@media (max-width: 900px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .hero-eyebrow-badge, .hero-actions {
-    justify-content: center;
-  }
-
-  .hero-trust-row {
-    justify-content: center;
-  }
-
-  .about-grid, .guides-grid, .order-layout-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .trust-badges-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .top-bar-left {
-    display: none;
+/* --------------------------------------------------------------------------
+   Tier 2: Tablet Mode (max-width: 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  /* Tablet Header & Navigation */
+  .site-header {
+    position: sticky;
+    top: 0;
   }
 
   .header-container {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.25rem;
+    gap: 1rem;
+  }
+
+  .header-search {
+    display: none;
   }
 
   .menu-toggle-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-gold-subtle);
   }
 
   .site-nav {
     position: fixed;
-    top: 70px;
+    top: 68px;
     left: 0;
     right: 0;
     background: var(--bg-glass-strong);
-    border-bottom: 1px solid var(--border-gold);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1.5px solid var(--border-gold);
     flex-direction: column;
-    padding: 1.5rem;
-    gap: 0.75rem;
+    padding: 1.5rem 1.25rem;
+    gap: 0.6rem;
     display: none;
+    max-height: calc(100vh - 68px);
+    overflow-y: auto;
+    z-index: 999;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
   }
 
   .site-nav.open {
     display: flex;
   }
 
-  .categories-grid, .products-grid {
-    grid-template-columns: 1fr;
+  .site-nav .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 0.85rem 1.25rem;
+    font-size: 1.05rem;
   }
 
-  .form-row-2, .estimator-row {
+  /* Tablet Hero */
+  .hero {
+    padding: 3.5rem 1.5rem 4.5rem;
+    min-height: auto;
+  }
+
+  .hero-grid {
     grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-copy {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .hero-eyebrow-badge,
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-trust-row {
+    max-width: 680px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-visual-wrapper {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hero-main-card img {
+    height: 400px;
+  }
+
+  /* Tablet Sections */
+  .section-categories,
+  .section-products,
+  .section-spotlight,
+  .section-about,
+  .section-guides,
+  .section-orders {
+    padding: 4.5rem 1.5rem;
+  }
+
+  .spotlight-card {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .spotlight-dual-visual {
+    max-width: 520px;
+    margin: 0 auto 1.5rem;
+    width: 100%;
+  }
+
+  .spotlight-perks-list {
+    max-width: 480px;
+    margin: 0 auto 2rem;
+    text-align: left;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about-image-stage {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .about-image-stage img {
+    height: 400px;
+  }
+
+  .about-pillars {
+    max-width: 600px;
+    margin: 2rem auto 0;
+  }
+
+  .ornament-divider {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .guides-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .order-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .trust-badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tier 3: Phablets & Mobile Landscape (max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 0.4rem 1rem;
+    font-size: 0.76rem;
+    justify-content: center;
+  }
+
+  .top-bar-left {
+    display: none;
+  }
+
+  .top-bar-right {
+    gap: 0.95rem;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .filter-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0.25rem 0.25rem 0.85rem;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    flex-shrink: 0;
+    padding: 0.5rem 1.05rem;
+    font-size: 0.82rem;
+  }
+
+  .form-row-2,
+  .estimator-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .footer-top {
     grid-template-columns: 1fr;
+    gap: 2.25rem;
+    margin-bottom: 2.5rem;
   }
 
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+    gap: 0.85rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tier 4: Standard Mobile Devices (max-width: 640px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  /* Header Compact Mode (prevents overflow on any phone) */
+  .header-container {
+    padding: 0.65rem 0.85rem;
+    gap: 0.45rem;
+  }
+
+  .brand-crest {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .brand-title {
+    font-size: 1.15rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
+  }
+
+  .header-actions {
+    gap: 0.45rem;
+  }
+
+  .btn-whatsapp-header {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .btn-whatsapp-header span {
+    display: none;
+  }
+
+  .btn-whatsapp-header svg {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+  }
+
+  .menu-toggle-btn {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+  }
+
+  .site-nav {
+    top: 60px;
+    max-height: calc(100vh - 60px);
+  }
+
+  /* Mobile Hero */
+  .hero {
+    padding: 2.25rem 1rem 3.25rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 7.6vw, 2.5rem);
+    line-height: 1.15;
+    margin-bottom: 0.85rem;
+  }
+
+  .hero-lead {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin-bottom: 1.6rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.92rem;
+  }
+
+  .hero-trust-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding-top: 1.25rem;
+  }
+
+  .trust-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .trust-item p {
+    font-size: 0.68rem;
+    line-height: 1.25;
+  }
+
+  .hero-main-card img {
+    height: 290px;
+  }
+
+  .mini-tag-1 {
+    top: 8px;
+    right: 8px;
+    font-size: 0.68rem;
+    padding: 0.35rem 0.65rem;
+  }
+
+  .mini-tag-2 {
+    bottom: 50px;
+    left: 8px;
+    font-size: 0.68rem;
+    padding: 0.35rem 0.65rem;
+  }
+
+  .hero-floating-badge {
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .badge-details h5 {
+    font-size: 0.82rem;
+  }
+
+  .badge-details p {
+    font-size: 0.68rem;
+  }
+
+  .badge-tag {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  /* Mobile Sections Spacing & Grids */
+  .section-categories,
+  .section-products,
+  .section-spotlight,
+  .section-about,
+  .section-guides,
+  .section-orders {
+    padding: 3rem 1rem;
+  }
+
+  .categories-grid,
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+  }
+
+  .category-card {
+    padding: 1.5rem 1.15rem;
+  }
+
+  .category-image-wrap {
+    height: 210px;
+  }
+
+  .product-media {
+    height: 250px;
+  }
+
+  .product-info {
+    padding: 1.25rem 1rem;
+  }
+
+  .btn-inquire-product {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* Mobile Spotlight */
+  .spotlight-card {
+    padding: 1.6rem 1rem;
+    border-radius: var(--radius-md);
+    gap: 1.75rem;
+  }
+
+  .spotlight-dual-visual {
+    min-height: 260px;
+    margin-bottom: 1rem;
+  }
+
+  .spotlight-img-main {
+    width: 85%;
+    height: 230px;
+  }
+
+  .spotlight-img-accent {
+    width: 52%;
+    height: 165px;
+    top: -8px;
+    left: 0;
+  }
+
+  .spotlight-content h3 {
+    font-size: clamp(1.5rem, 6.2vw, 2rem);
+  }
+
+  .spotlight-discount-badge {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.65rem;
+  }
+
+  .spotlight-perks-list {
+    gap: 0.55rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .spotlight-perks-list li {
+    font-size: 0.82rem;
+  }
+
+  #btnBookConsultation {
+    width: 100%;
+  }
+
+  /* Mobile About */
+  .about-image-stage img {
+    height: 280px;
+  }
+
+  .about-experience-stamp {
+    bottom: -15px;
+    right: 10px;
+    padding: 0.65rem 1rem;
+  }
+
+  .about-experience-stamp h4 {
+    font-size: 1.65rem;
+  }
+
+  .about-experience-stamp p {
+    font-size: 0.68rem;
+  }
+
+  .about-pillars {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Mobile Guides & Tools */
+  .guide-card {
+    padding: 1.5rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .ring-preview-box {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1.25rem 1rem;
+  }
+
+  .size-readout {
+    text-align: center;
+  }
+
+  .estimator-result-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .estimator-result-card .btn {
+    width: 100%;
+  }
+
+  /* Mobile Order Studio */
+  .order-card-main,
+  .contact-info-card,
+  .process-steps-card {
+    padding: 1.5rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .order-submit-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .order-submit-actions .btn {
+    width: 100%;
+  }
+
+  .wa-preview-box {
+    padding: 0.85rem 0.75rem;
+  }
+
+  .wa-preview-content {
+    font-size: 0.72rem;
+    padding: 0.65rem;
+    word-break: break-all;
+    overflow-x: auto;
+  }
+
+  /* Mobile Trust & Footer */
+  .section-trust {
+    padding: 2.75rem 1rem;
   }
 
   .trust-badges-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .trust-badge-item {
+    padding: 1.25rem 1rem;
+  }
+
+  .site-footer {
+    padding: 3.5rem 1rem 1.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tier 5: Compact Screens (max-width: 440px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 440px) {
+  .hero-trust-row {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .top-bar-right a:last-child {
+    display: none;
+  }
+
+  .newsletter-box {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .newsletter-input {
+    border-radius: var(--radius-pill);
+    width: 100%;
+  }
+
+  .newsletter-btn {
+    border-radius: var(--radius-pill);
+    width: 100%;
+    padding: 0.75rem;
   }
 }
 
@@ -2660,12 +3185,42 @@ h1, h2, h3, h4, .serif-font {
   color: #a49487;
 }
 
+/* Mobile & Tablet Nav Drawer Solid Luxury Styling */
+.site-nav {
+  background-color: var(--bg-secondary);
+}
+
+.menu-toggle-btn span {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transform-origin: center;
+}
+
+.menu-toggle-btn[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle-btn[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.menu-toggle-btn[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 /* Light Mode: Mobile Nav Drawer */
 [data-theme="light"] .site-nav {
-  background: rgba(255, 252, 248, 0.98);
-  border-bottom-color: rgba(161, 108, 29, 0.3);
+  background: #ffffff !important;
+  border-bottom: 1.5px solid rgba(161, 108, 29, 0.28) !important;
+  box-shadow: 0 16px 45px rgba(50, 30, 20, 0.14) !important;
 }
 
 [data-theme="light"] .menu-toggle-btn span {
   background: #7b4f0e;
+}
+
+[data-theme="dark"] .site-nav {
+  background: #121217 !important;
+  border-bottom: 1.5px solid var(--border-gold) !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7) !important;
 }
