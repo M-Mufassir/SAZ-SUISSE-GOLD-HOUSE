@@ -126,7 +126,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // --------------------------------------------------------------------------
   // Theme Toggle: Obsidian Dark vs Champagne Ivory
   // --------------------------------------------------------------------------
-  const savedTheme = localStorage.getItem("saz_theme") || "dark";
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlTheme = urlParams.get("theme");
+  const savedTheme = urlTheme || localStorage.getItem("saz_theme") || "dark";
   document.documentElement.setAttribute("data-theme", savedTheme);
 
   if (themeToggleBtn) {

@@ -60,37 +60,47 @@
   --transition-slow: 600ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Light Theme: Champagne Ivory & Swiss Ruby (Matching existing brand colors) */
+/* Light Theme: Royal Champagne Ivory & Imperial Bronze Gold */
 [data-theme="light"] {
-  --bg-primary: #fdf8f5;
-  --bg-secondary: #f6ede5;
-  --bg-tertiary: #eedfd3;
-  --bg-glass: rgba(253, 248, 243, 0.92);
-  --bg-glass-strong: rgba(255, 252, 249, 0.98);
-  --bg-card: rgba(255, 252, 249, 0.96);
+  --bg-primary: #faf6f0;
+  --bg-secondary: #f4ecdf;
+  --bg-tertiary: #ebdccf;
+  --bg-glass: rgba(250, 246, 240, 0.92);
+  --bg-glass-strong: rgba(255, 255, 255, 0.97);
+  --bg-card: #ffffff;
 
-  --text-main: #241410;
-  --text-muted: #5e433b;
-  --text-light: #82665e;
+  /* Deep High-Contrast Mocha & Espresso Typography (WCAG AAA Compliant) */
+  --text-main: #1d130e;
+  --text-muted: #4e3c33;
+  --text-light: #725f54;
 
-  --gold-100: #5a3f15;
-  --gold-200: #7a5319;
-  --gold-300: #916520;
-  --gold-400: #a87627;
-  --gold-500: #8c6018;
-  --gold-gradient: linear-gradient(135deg, #a87627 0%, #704a11 100%);
-  --gold-gradient-dark: linear-gradient(145deg, #fff3e6 0%, #f4e3d3 100%);
+  /* Rich High-Contrast Gold Tones Specially Tuned for Light Canvas */
+  --gold-100: #6b440b;
+  --gold-200: #7b4f0e;
+  --gold-300: #8c5d15;
+  --gold-400: #a16c1d;
+  --gold-500: #b57d28;
+  --gold-600: #c98e34;
+  --gold-700: #dda042;
+  --gold-gradient: linear-gradient(135deg, #78470a 0%, #aa7520 45%, #633904 100%);
+  --gold-gradient-glow: linear-gradient(135deg, #8a530f 0%, #bc8429 50%, #703f05 100%);
+  --gold-gradient-dark: linear-gradient(145deg, #ffffff 0%, #f7eee4 100%);
 
-  --border-gold: rgba(168, 118, 39, 0.32);
-  --border-gold-subtle: rgba(168, 118, 39, 0.18);
-  --border-gold-strong: rgba(168, 118, 39, 0.7);
-  --border-glass: rgba(110, 60, 48, 0.12);
+  /* Swiss Ruby & Gem Accents */
+  --ruby-accent: #a32213;
+  --ruby-glow: rgba(163, 34, 19, 0.25);
 
-  --shadow-sm: 0 4px 14px rgba(70, 40, 30, 0.08);
-  --shadow-md: 0 10px 28px rgba(70, 40, 30, 0.12);
-  --shadow-lg: 0 20px 50px rgba(70, 40, 30, 0.16);
-  --shadow-gold: 0 8px 30px rgba(168, 118, 39, 0.18);
-  --shadow-gold-hover: 0 14px 40px rgba(168, 118, 39, 0.3);
+  /* Precise Gold Borders & Subtle Drop Shadows */
+  --border-gold: rgba(161, 108, 29, 0.32);
+  --border-gold-subtle: rgba(161, 108, 29, 0.18);
+  --border-gold-strong: rgba(161, 108, 29, 0.65);
+  --border-glass: rgba(100, 60, 40, 0.12);
+
+  --shadow-sm: 0 3px 10px rgba(50, 30, 20, 0.05);
+  --shadow-md: 0 8px 24px rgba(50, 30, 20, 0.08);
+  --shadow-lg: 0 16px 40px rgba(50, 30, 20, 0.11);
+  --shadow-gold: 0 6px 24px rgba(161, 108, 29, 0.14);
+  --shadow-gold-hover: 0 12px 32px rgba(161, 108, 29, 0.24);
 }
 
 /* Reset & Base */
@@ -1982,4 +1992,680 @@ h1, h2, h3, h4, .serif-font {
   .trust-badges-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ==========================================================================
+   Light Theme Dedicated Luxury Styling & Contrast Enhancements
+   Ensures WCAG AAA Readability, Eye Comfort, and Haute Joaillerie Elegance
+   ========================================================================== */
+
+/* Ambient & Canvas Background in Light Mode */
+[data-theme="light"] body {
+  background-color: var(--bg-primary);
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(203, 161, 83, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(163, 34, 19, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(203, 161, 83, 0.08) 0%, transparent 55%);
+}
+
+[data-theme="light"] .bg-ambient-glow::before {
+  background: radial-gradient(circle, rgba(203, 161, 83, 0.14) 0%, transparent 68%);
+}
+
+[data-theme="light"] .bg-ambient-glow::after {
+  background: radial-gradient(circle, rgba(163, 34, 19, 0.07) 0%, transparent 70%);
+}
+
+/* Light Mode: Elegant Champagne Ivory Top Bar */
+[data-theme="light"] .top-bar {
+  background: linear-gradient(90deg, #f7eee3 0%, #eee1cf 50%, #f7eee3 100%);
+  border-bottom: 1px solid rgba(161, 108, 29, 0.22);
+  color: #4e3c33;
+}
+
+[data-theme="light"] .top-badge {
+  background: rgba(161, 108, 29, 0.12);
+  color: #6b440b;
+  border-color: rgba(161, 108, 29, 0.35);
+  font-weight: 700;
+}
+
+[data-theme="light"] .top-bar-link {
+  color: #5c4436;
+  font-weight: 600;
+}
+
+[data-theme="light"] .top-bar-link:hover {
+  color: #1d130e;
+}
+
+/* Light Mode: Navigation & Header Controls */
+[data-theme="light"] .site-header {
+  background: rgba(253, 249, 244, 0.94);
+  border-bottom-color: rgba(161, 108, 29, 0.22);
+}
+
+[data-theme="light"] .site-header.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 4px 20px rgba(50, 30, 20, 0.08);
+}
+
+[data-theme="light"] .brand-crest {
+  background: linear-gradient(135deg, #2b1f13 0%, #15110d 100%);
+  border-color: #a16c1d;
+  color: #fae19c;
+  box-shadow: 0 2px 12px rgba(161, 108, 29, 0.25);
+}
+
+[data-theme="light"] .brand-title {
+  background: linear-gradient(135deg, #78470a 0%, #a8721c 50%, #633904 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="light"] .brand-subtitle {
+  color: #6b574d;
+}
+
+[data-theme="light"] .search-input {
+  background: #ffffff;
+  border: 1.5px solid rgba(161, 108, 29, 0.25);
+  color: #1d130e;
+}
+
+[data-theme="light"] .search-input::placeholder {
+  color: #8c786e;
+}
+
+[data-theme="light"] .search-input:focus {
+  background: #ffffff;
+  border-color: #8c5d15;
+  box-shadow: 0 0 16px rgba(161, 108, 29, 0.2);
+}
+
+[data-theme="light"] .search-icon-left {
+  color: #8c5d15;
+}
+
+[data-theme="light"] .nav-link {
+  color: #4e3c33;
+  font-weight: 600;
+}
+
+[data-theme="light"] .nav-link:hover {
+  color: #1d130e;
+  background: rgba(161, 108, 29, 0.1);
+}
+
+[data-theme="light"] .nav-link.active {
+  color: #633904;
+  background: rgba(161, 108, 29, 0.16);
+  border: 1px solid rgba(161, 108, 29, 0.38);
+  font-weight: 700;
+}
+
+[data-theme="light"] .icon-btn {
+  background: #ffffff;
+  border: 1.5px solid rgba(161, 108, 29, 0.24);
+  color: #3d2c23;
+}
+
+[data-theme="light"] .icon-btn:hover {
+  border-color: #8c5d15;
+  color: #6b440b;
+  background: #fbf5ef;
+}
+
+/* Light Mode: Hero Section Elements */
+[data-theme="light"] .hero-backdrop-glow {
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+}
+
+[data-theme="light"] .hero-eyebrow-badge {
+  background: rgba(161, 108, 29, 0.11);
+  border: 1px solid rgba(161, 108, 29, 0.32);
+  color: #6b440b;
+  font-weight: 700;
+}
+
+[data-theme="light"] .gold-gradient-text {
+  background: linear-gradient(135deg, #78470a 0%, #aa7520 45%, #633904 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="light"] .hero-lead {
+  color: #4e3c33;
+}
+
+[data-theme="light"] .btn-gold {
+  background: linear-gradient(135deg, #d8a044 0%, #bd8323 100%);
+  color: #160e05;
+  font-weight: 700;
+  box-shadow: 0 6px 22px rgba(161, 108, 29, 0.3);
+}
+
+[data-theme="light"] .btn-gold:hover {
+  box-shadow: 0 10px 30px rgba(161, 108, 29, 0.45);
+}
+
+[data-theme="light"] .btn-ghost-gold {
+  background: #ffffff;
+  border: 1.5px solid #8c5d15;
+  color: #6b440b;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(50, 30, 20, 0.05);
+}
+
+[data-theme="light"] .btn-ghost-gold:hover {
+  background: #8c5d15;
+  color: #ffffff;
+  border-color: #8c5d15;
+}
+
+[data-theme="light"] .hero-trust-row {
+  border-top-color: rgba(161, 108, 29, 0.22);
+}
+
+[data-theme="light"] .trust-item h4 {
+  color: #7b4f0e;
+  font-weight: 700;
+}
+
+[data-theme="light"] .trust-item p {
+  color: #4e3c33;
+}
+
+[data-theme="light"] .hero-main-card {
+  border-color: rgba(161, 108, 29, 0.32);
+  box-shadow: 0 16px 45px rgba(50, 30, 20, 0.12), 0 0 30px rgba(212, 175, 55, 0.1);
+}
+
+[data-theme="light"] .hero-main-card::before {
+  background: linear-gradient(180deg, transparent 55%, rgba(18, 12, 8, 0.75) 100%);
+}
+
+[data-theme="light"] .hero-floating-badge {
+  background: #ffffff;
+  border: 1.5px solid rgba(161, 108, 29, 0.35);
+  box-shadow: 0 10px 30px rgba(50, 30, 20, 0.14);
+}
+
+[data-theme="light"] .badge-details h5 {
+  color: #1d130e;
+  font-weight: 700;
+}
+
+[data-theme="light"] .badge-details p {
+  color: #4e3c33;
+}
+
+[data-theme="light"] .badge-tag {
+  background: #fae8e5;
+  color: #9c1f11;
+  border: 1px solid #eba49a;
+  font-weight: 700;
+}
+
+[data-theme="light"] .hero-mini-tag {
+  background: #ffffff;
+  border: 1.5px solid rgba(161, 108, 29, 0.32);
+  color: #1d130e;
+  box-shadow: 0 8px 24px rgba(50, 30, 20, 0.1);
+  font-weight: 700;
+}
+
+/* Light Mode: Curated Categories Cards */
+[data-theme="light"] .category-card {
+  background: #ffffff;
+  border: 1px solid rgba(161, 108, 29, 0.2);
+  box-shadow: 0 4px 18px rgba(50, 30, 20, 0.05);
+}
+
+[data-theme="light"] .category-card:hover {
+  border-color: #8c5d15;
+  box-shadow: 0 12px 35px rgba(50, 30, 20, 0.1), 0 0 20px rgba(161, 108, 29, 0.12);
+}
+
+[data-theme="light"] .category-tag-sub {
+  color: #7b4f0e;
+  font-weight: 700;
+}
+
+[data-theme="light"] .category-title {
+  color: #1d130e;
+}
+
+[data-theme="light"] .category-card:hover .category-title {
+  color: #7b4f0e;
+}
+
+[data-theme="light"] .category-image-wrap {
+  background: #f7f1e9;
+  border-color: rgba(161, 108, 29, 0.18);
+}
+
+[data-theme="light"] .category-cta-link {
+  color: #7b4f0e;
+  font-weight: 700;
+}
+
+[data-theme="light"] .category-card:hover .category-cta-link {
+  color: #1d130e;
+}
+
+/* Light Mode: Masterpieces Section & Products Grid */
+[data-theme="light"] .section-products {
+  background: linear-gradient(180deg, transparent 0%, rgba(238, 222, 207, 0.45) 50%, transparent 100%);
+}
+
+[data-theme="light"] .filter-btn {
+  background: #ffffff;
+  border: 1.5px solid rgba(161, 108, 29, 0.22);
+  color: #4e3c33;
+}
+
+[data-theme="light"] .filter-btn:hover {
+  color: #1d130e;
+  border-color: #8c5d15;
+  background: #faf4ed;
+}
+
+[data-theme="light"] .filter-btn.active {
+  background: linear-gradient(135deg, #d8a044 0%, #b87e1f 100%);
+  color: #160e05;
+  border-color: #9c6813;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(161, 108, 29, 0.28);
+}
+
+[data-theme="light"] .product-card {
+  background: #ffffff;
+  border: 1px solid rgba(161, 108, 29, 0.2);
+  box-shadow: 0 6px 20px rgba(50, 30, 20, 0.06);
+}
+
+[data-theme="light"] .product-card:hover {
+  border-color: #9c6813;
+  box-shadow: 0 14px 35px rgba(50, 30, 20, 0.12), 0 0 25px rgba(161, 108, 29, 0.15);
+}
+
+[data-theme="light"] .product-media {
+  background: #f5ede4;
+}
+
+[data-theme="light"] .product-badge-purity {
+  background: #ffffff;
+  border: 1.5px solid rgba(161, 108, 29, 0.38);
+  color: #6b440b;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(50, 30, 20, 0.08);
+}
+
+[data-theme="light"] .product-category-sub {
+  color: #7b4f0e;
+  font-weight: 700;
+}
+
+[data-theme="light"] .product-name {
+  color: #1d130e;
+  font-weight: 700;
+}
+
+[data-theme="light"] .product-meta-spec {
+  color: #4e3c33;
+}
+
+[data-theme="light"] .product-bottom-row {
+  border-top: 1px solid rgba(161, 108, 29, 0.18);
+}
+
+[data-theme="light"] .price-sub {
+  color: #725f54;
+  font-weight: 600;
+}
+
+[data-theme="light"] .price-val {
+  color: #6b440b;
+  font-weight: 700;
+}
+
+[data-theme="light"] .btn-inquire-product {
+  background: #25d366;
+  color: #ffffff;
+  border: 1px solid #1ebb57;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.28);
+}
+
+[data-theme="light"] .btn-inquire-product:hover {
+  background: #1eb556;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+}
+
+/* Light Mode: Signature Spotlight / Bridal Section (Fixes Contrast Failure) */
+[data-theme="light"] .spotlight-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fbf5ef 60%, #f5e9dc 100%);
+  border: 1.5px solid rgba(161, 108, 29, 0.35);
+  box-shadow: 0 18px 50px rgba(60, 35, 20, 0.08), 0 0 35px rgba(212, 175, 55, 0.12);
+}
+
+[data-theme="light"] .spotlight-card::before {
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+}
+
+[data-theme="light"] .spotlight-img-main {
+  border-color: rgba(161, 108, 29, 0.3);
+  box-shadow: 0 12px 30px rgba(50, 30, 20, 0.12);
+}
+
+[data-theme="light"] .spotlight-img-accent {
+  border: 2px solid #a16c1d;
+  box-shadow: 0 16px 40px rgba(50, 30, 20, 0.16);
+}
+
+[data-theme="light"] .spotlight-content h3 {
+  color: #1d130e;
+}
+
+[data-theme="light"] .spotlight-discount-badge {
+  background: rgba(161, 108, 29, 0.12);
+  color: #6b440b;
+  border: 1.5px solid rgba(161, 108, 29, 0.35);
+  font-weight: 700;
+}
+
+[data-theme="light"] .spotlight-content p {
+  color: #4e3c33;
+}
+
+[data-theme="light"] .spotlight-perks-list li {
+  color: #1d130e;
+  font-weight: 600;
+}
+
+[data-theme="light"] .spotlight-perks-list li span.check-icon {
+  color: #8c5d15;
+  font-size: 1.05rem;
+}
+
+/* Light Mode: Heritage & Atelier Section */
+[data-theme="light"] .about-experience-stamp {
+  background: #ffffff;
+  border: 2px solid #a16c1d;
+  box-shadow: 0 10px 30px rgba(50, 30, 20, 0.12);
+}
+
+[data-theme="light"] .about-experience-stamp h4 {
+  color: #6b440b;
+  font-weight: 700;
+}
+
+[data-theme="light"] .about-experience-stamp p {
+  color: #4e3c33;
+  font-weight: 600;
+}
+
+[data-theme="light"] .pillar-box {
+  background: #ffffff;
+  border: 1px solid rgba(161, 108, 29, 0.22);
+  box-shadow: 0 4px 16px rgba(50, 30, 20, 0.05);
+}
+
+[data-theme="light"] .pillar-box:hover {
+  border-color: #8c5d15;
+  transform: translateY(-4px);
+}
+
+[data-theme="light"] .pillar-box h4 {
+  color: #6b440b;
+  font-weight: 700;
+}
+
+[data-theme="light"] .pillar-box p {
+  color: #4e3c33;
+}
+
+/* Light Mode: Jewellery Interactive Guides & Size Tools */
+[data-theme="light"] .section-guides {
+  background: linear-gradient(180deg, transparent 0%, rgba(238, 222, 207, 0.5) 50%, transparent 100%);
+}
+
+[data-theme="light"] .guide-card {
+  background: #ffffff;
+  border: 1px solid rgba(161, 108, 29, 0.24);
+  box-shadow: 0 8px 30px rgba(50, 30, 20, 0.07);
+}
+
+[data-theme="light"] .guide-card h3 {
+  color: #1d130e;
+}
+
+[data-theme="light"] .guide-card p {
+  color: #4e3c33;
+}
+
+[data-theme="light"] .slider-labels {
+  color: #4e3c33;
+  font-weight: 600;
+}
+
+[data-theme="light"] .ring-preview-box {
+  background: #faf4ed;
+  border: 1px solid rgba(161, 108, 29, 0.25);
+}
+
+[data-theme="light"] .visual-ring-circle {
+  background: #ffffff;
+  border: 3px solid #a16c1d;
+  color: #6b440b;
+  box-shadow: 0 4px 16px rgba(161, 108, 29, 0.2);
+}
+
+[data-theme="light"] .size-readout h4 {
+  color: #6b440b;
+  font-weight: 700;
+}
+
+[data-theme="light"] .size-readout p {
+  color: #4e3c33;
+}
+
+[data-theme="light"] .form-group label {
+  color: #2b1b14;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+[data-theme="light"] .form-select,
+[data-theme="light"] .form-input,
+[data-theme="light"] .form-textarea {
+  background: #ffffff;
+  border: 1.5px solid rgba(161, 108, 29, 0.28);
+  color: #1d130e;
+}
+
+[data-theme="light"] .form-select:focus,
+[data-theme="light"] .form-input:focus,
+[data-theme="light"] .form-textarea:focus {
+  border-color: #8c5d15;
+  background: #ffffff;
+  box-shadow: 0 0 16px rgba(161, 108, 29, 0.2);
+}
+
+[data-theme="light"] .form-select option {
+  background: #ffffff;
+  color: #1d130e;
+}
+
+[data-theme="light"] .estimator-result-card {
+  background: #faf4ec;
+  border: 1.5px solid rgba(161, 108, 29, 0.32);
+}
+
+[data-theme="light"] .est-price-box h5 {
+  color: #4e3c33;
+  font-weight: 600;
+}
+
+[data-theme="light"] #estTotalPrice {
+  color: #6b440b;
+  font-weight: 700;
+}
+
+/* Light Mode: Order Studio & WhatsApp Hub */
+[data-theme="light"] .order-card-main {
+  background: #ffffff;
+  border: 1px solid rgba(161, 108, 29, 0.24);
+  box-shadow: 0 12px 35px rgba(50, 30, 20, 0.08);
+}
+
+[data-theme="light"] #sendEmailBtn {
+  background: #ffffff;
+  border: 1.5px solid #8c5d15;
+  color: #6b440b;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(50, 30, 20, 0.05);
+}
+
+[data-theme="light"] #sendEmailBtn:hover {
+  background: #8c5d15;
+  color: #ffffff;
+}
+
+[data-theme="light"] .contact-info-card,
+[data-theme="light"] .process-steps-card {
+  background: #ffffff;
+  border: 1px solid rgba(161, 108, 29, 0.22);
+  box-shadow: 0 6px 22px rgba(50, 30, 20, 0.06);
+}
+
+[data-theme="light"] .contact-info-card h3,
+[data-theme="light"] .process-steps-card h3 {
+  color: #1d130e;
+  font-weight: 700;
+}
+
+[data-theme="light"] .contact-icon {
+  background: rgba(161, 108, 29, 0.12);
+  color: #6b440b;
+  border-color: rgba(161, 108, 29, 0.3);
+}
+
+[data-theme="light"] .contact-details a {
+  color: #6b440b;
+  font-weight: 700;
+}
+
+[data-theme="light"] .contact-details a:hover {
+  color: #1d130e;
+}
+
+[data-theme="light"] .steps-list li {
+  color: #2b1b14;
+  font-weight: 500;
+}
+
+[data-theme="light"] .steps-list li::before {
+  background: linear-gradient(135deg, #d8a044 0%, #b87e1f 100%);
+  color: #160e05;
+  font-weight: 700;
+}
+
+/* Light Mode: Trust Badges Section */
+[data-theme="light"] .section-trust {
+  background: #f5ebe0;
+  border-top-color: rgba(161, 108, 29, 0.18);
+  border-bottom-color: rgba(161, 108, 29, 0.18);
+}
+
+[data-theme="light"] .trust-badge-item {
+  background: #ffffff;
+  border: 1px solid rgba(161, 108, 29, 0.2);
+  box-shadow: 0 4px 16px rgba(50, 30, 20, 0.05);
+}
+
+[data-theme="light"] .trust-badge-item:hover {
+  border-color: #8c5d15;
+  transform: translateY(-4px);
+}
+
+[data-theme="light"] .trust-badge-icon {
+  color: #8c5d15;
+}
+
+[data-theme="light"] .trust-badge-item h4 {
+  color: #1d130e;
+  font-weight: 700;
+}
+
+[data-theme="light"] .trust-badge-item p {
+  color: #4e3c33;
+}
+
+/* Light Mode: Luxury Grounding Obsidian & Gold Footer (High Contrast) */
+[data-theme="light"] .site-footer {
+  background: #130f0c;
+  border-top: 1.5px solid rgba(212, 175, 55, 0.28);
+  color: #d0c5bb;
+}
+
+[data-theme="light"] .site-footer .footer-col h4 {
+  color: #fae19c;
+}
+
+[data-theme="light"] .site-footer .footer-col p {
+  color: #c4b6ab;
+}
+
+[data-theme="light"] .site-footer .footer-links a {
+  color: #bfb0a4;
+}
+
+[data-theme="light"] .site-footer .footer-links a:hover {
+  color: #fae19c;
+}
+
+[data-theme="light"] .site-footer .newsletter-input {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(212, 175, 55, 0.3);
+  color: #ffffff;
+}
+
+[data-theme="light"] .site-footer .newsletter-input:focus {
+  border-color: #dfb86c;
+}
+
+[data-theme="light"] .site-footer .newsletter-btn {
+  background: linear-gradient(135deg, #fae19c 0%, #dfb86c 40%, #b5893d 100%);
+  color: #160e05;
+  font-weight: 700;
+}
+
+[data-theme="light"] .site-footer .social-circle-link {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(212, 175, 55, 0.3);
+  color: #fae19c;
+}
+
+[data-theme="light"] .site-footer .social-circle-link:hover {
+  background: linear-gradient(135deg, #fae19c 0%, #dfb86c 40%, #b5893d 100%);
+  color: #160e05;
+}
+
+[data-theme="light"] .site-footer .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.1);
+  color: #a49487;
+}
+
+/* Light Mode: Mobile Nav Drawer */
+[data-theme="light"] .site-nav {
+  background: rgba(255, 252, 248, 0.98);
+  border-bottom-color: rgba(161, 108, 29, 0.3);
+}
+
+[data-theme="light"] .menu-toggle-btn span {
+  background: #7b4f0e;
 }
